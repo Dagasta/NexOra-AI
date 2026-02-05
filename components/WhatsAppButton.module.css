@@ -1,0 +1,135 @@
+.whatsappButton {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #25D366, #128C7E);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+    cursor: pointer;
+    z-index: 1000;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    opacity: 0;
+    transform: scale(0);
+    text-decoration: none;
+}
+
+.whatsappButton.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.whatsappButton:hover {
+    width: 180px;
+    border-radius: 30px;
+    box-shadow: 0 6px 30px rgba(37, 211, 102, 0.6);
+    transform: scale(1.05);
+}
+
+.whatsappIcon {
+    width: 32px;
+    height: 32px;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.whatsappButton:hover .whatsappIcon {
+    width: 28px;
+    height: 28px;
+    margin-right: 8px;
+}
+
+.whatsappText {
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    white-space: nowrap;
+    opacity: 0;
+    max-width: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.whatsappButton:hover .whatsappText {
+    opacity: 1;
+    max-width: 120px;
+}
+
+.whatsappPulse {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: rgba(37, 211, 102, 0.4);
+    animation: pulse 2s infinite;
+    pointer-events: none;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.3);
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .whatsappButton {
+        bottom: 20px;
+        right: 20px;
+        width: 56px;
+        height: 56px;
+    }
+
+    .whatsappIcon {
+        width: 28px;
+        height: 28px;
+    }
+
+    .whatsappButton:hover {
+        width: 56px;
+        border-radius: 50%;
+    }
+
+    .whatsappButton:hover .whatsappIcon {
+        width: 28px;
+        height: 28px;
+        margin-right: 0;
+    }
+
+    .whatsappButton:hover .whatsappText {
+        opacity: 0;
+        max-width: 0;
+    }
+}
+
+/* Smooth entrance animation */
+@keyframes slideIn {
+    from {
+        transform: translateY(100px) scale(0);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+}
+
+.whatsappButton.visible {
+    animation: slideIn 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}

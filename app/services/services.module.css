@@ -1,0 +1,108 @@
+.servicesPage {
+    min-height: 100vh;
+}
+
+.servicesHero {
+    padding: var(--space-16) 0 var(--space-12);
+    background: linear-gradient(135deg, var(--color-void-black) 0%, var(--color-deep-space) 100%);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.servicesHero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="grid" width="100" height="100" patternUnits="userSpaceOnUse"><path d="M 100 0 L 0 0 0 100" fill="none" stroke="rgba(138,101,255,0.1)" stroke-width="1"/></pattern></defs><rect width="100%" height="100%" fill="url(%23grid)"/></svg>');
+    opacity: 0.3;
+}
+
+.servicesHero h1 {
+    font-size: var(--font-size-4xl);
+    margin-bottom: var(--space-4);
+    position: relative;
+    z-index: 1;
+}
+
+.servicesSubtitle {
+    font-size: var(--font-size-xl);
+    color: var(--color-platinum-silver);
+    position: relative;
+    z-index: 1;
+}
+
+.servicesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: var(--space-8);
+    margin-bottom: var(--space-12);
+}
+
+.servicesGrid a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    transition: transform var(--transition-base);
+}
+
+.servicesGrid a:hover {
+    transform: translateY(-8px);
+}
+
+.serviceIcon {
+    font-size: 3rem;
+    margin-bottom: var(--space-4);
+}
+
+.servicesGrid h2 {
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--space-3);
+    color: var(--color-pure-white);
+}
+
+.servicesGrid p {
+    flex: 1;
+    color: var(--color-platinum-silver);
+    line-height: 1.7;
+    margin-bottom: var(--space-4);
+}
+
+.serviceLink {
+    font-weight: var(--font-weight-semibold);
+    transition: all var(--transition-base);
+}
+
+.servicesCta {
+    padding: var(--space-16) 0;
+    background: linear-gradient(135deg, var(--color-deep-space) 0%, var(--color-void-black) 100%);
+    text-align: center;
+}
+
+.servicesCta h2 {
+    margin-bottom: var(--space-4);
+    font-size: var(--font-size-3xl);
+}
+
+.servicesCta p {
+    font-size: var(--font-size-lg);
+    color: var(--color-platinum-silver);
+    margin-bottom: var(--space-6);
+}
+
+@media (max-width: 768px) {
+    .servicesHero h1 {
+        font-size: var(--font-size-3xl);
+    }
+
+    .servicesSubtitle {
+        font-size: var(--font-size-lg);
+    }
+
+    .servicesGrid {
+        grid-template-columns: 1fr;
+    }
+}

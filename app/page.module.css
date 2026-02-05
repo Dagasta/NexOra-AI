@@ -1,0 +1,320 @@
+/* Hero Section */
+.hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding-top: 80px;
+    background: var(--color-void-black);
+}
+
+.heroBackground {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 50% 50%, var(--color-deep-space) 0%, var(--color-void-black) 100%);
+    z-index: -1;
+}
+
+.heroContent {
+    text-align: center;
+    max-width: 1000px;
+    animation: fadeIn 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    z-index: 2;
+}
+
+.heroTitle {
+    font-size: clamp(3rem, 10vw, var(--font-size-7xl));
+    font-weight: var(--font-weight-bold);
+    letter-spacing: -0.02em;
+    margin-bottom: var(--space-4);
+    line-height: 0.9;
+    text-transform: uppercase;
+}
+
+.heroSubtitle {
+    display: block;
+    font-size: clamp(1.25rem, 4vw, var(--font-size-2xl));
+    font-weight: var(--font-weight-medium);
+    margin-top: var(--space-4);
+    color: var(--color-electric-plasma);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.heroDescription {
+    font-size: var(--font-size-xl);
+    color: var(--color-platinum-silver);
+    margin-bottom: var(--space-10);
+    line-height: 1.6;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.9;
+}
+
+.heroCtas {
+    display: flex;
+    gap: var(--space-6);
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Authority Bar */
+.authorityBar {
+    background: rgba(5, 5, 16, 0.8);
+    backdrop-filter: blur(20px);
+    border-top: 1px solid rgba(139, 92, 246, 0.2);
+    border-bottom: 1px solid rgba(139, 92, 246, 0.2);
+    padding: var(--space-6) 0;
+    position: relative;
+    z-index: 3;
+}
+
+.authorityContent {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: var(--space-8);
+    flex-wrap: wrap;
+    font-size: var(--font-size-sm);
+    color: var(--color-platinum-silver);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.separator {
+    color: var(--color-hyper-neon-purple);
+    opacity: 0.5;
+}
+
+/* Services Grid */
+.servicesGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-6);
+}
+
+.servicesGrid .card {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+}
+
+.serviceIcon {
+    font-size: var(--font-size-5xl);
+    margin-bottom: var(--space-3);
+}
+
+.servicesGrid h3 {
+    color: var(--color-pure-white);
+    margin-bottom: var(--space-2);
+}
+
+.servicesGrid p {
+    flex-grow: 1;
+    color: var(--color-platinum-silver);
+    font-size: var(--font-size-sm);
+}
+
+.serviceLink {
+    color: var(--color-electric-plasma);
+    font-weight: var(--font-weight-medium);
+    margin-top: var(--space-3);
+    transition: transform var(--transition-base);
+    display: inline-block;
+}
+
+.servicesGrid .card:hover .serviceLink {
+    transform: translateX(4px);
+}
+
+/* Industries Section */
+.industriesSection {
+    background: var(--color-void-black);
+    padding: var(--space-16) 0;
+}
+
+.industriesGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-4);
+}
+
+.industryCard {
+    position: relative;
+    height: 300px;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    background: linear-gradient(135deg, var(--color-hyper-neon-purple) 0%, var(--color-electric-plasma) 100%);
+    transition: transform var(--transition-base);
+}
+
+.industryCard:hover {
+    transform: scale(1.05);
+}
+
+.industryOverlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, transparent 0%, rgba(10, 14, 39, 0.9) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: var(--space-5);
+    transition: background var(--transition-base);
+}
+
+.industryCard:hover .industryOverlay {
+    background: linear-gradient(180deg, transparent 0%, rgba(10, 14, 39, 0.95) 100%);
+}
+
+.industryOverlay h3 {
+    color: var(--color-pure-white);
+    margin-bottom: var(--space-2);
+}
+
+.industryOverlay p {
+    color: var(--color-platinum-silver);
+    font-size: var(--font-size-sm);
+    margin-bottom: var(--space-3);
+}
+
+.industryLink {
+    color: var(--color-electric-plasma);
+    font-weight: var(--font-weight-medium);
+    font-size: var(--font-size-sm);
+}
+
+/* Outcomes Section */
+.outcomesSection {
+    background: var(--color-deep-space);
+}
+
+.metricsGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-8);
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.metric {
+    text-align: center;
+}
+
+.metricNumber {
+    font-size: var(--font-size-7xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-hyper-neon-purple);
+    margin-bottom: var(--space-3);
+}
+
+.metricLabel {
+    font-size: var(--font-size-base);
+    color: var(--color-platinum-silver);
+}
+
+/* Approach Section */
+.approachSection {
+    background: var(--color-platinum-silver);
+    color: var(--color-void-black);
+}
+
+.approachSection h2,
+.approachSection h3 {
+    color: var(--color-void-black);
+}
+
+.approachSection p {
+    color: var(--color-deep-space);
+}
+
+.approachContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-10);
+    align-items: center;
+}
+
+.approachList {
+    list-style: none;
+    padding: 0;
+}
+
+.approachList li {
+    padding: var(--space-2) 0;
+    color: var(--color-deep-space);
+    font-weight: var(--font-weight-medium);
+}
+
+.systemDiagram {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-4);
+}
+
+.diagramNode {
+    background: rgba(99, 102, 241, 0.1);
+    border: 2px solid var(--color-hyper-neon-purple);
+    border-radius: var(--radius-lg);
+    padding: var(--space-5);
+    text-align: center;
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-void-black);
+    transition: all var(--transition-base);
+}
+
+.diagramNode:hover {
+    background: rgba(99, 102, 241, 0.2);
+    transform: scale(1.05);
+}
+
+/* Final CTA */
+.finalCta {
+    background: linear-gradient(135deg, var(--color-void-black) 0%, var(--color-deep-space) 100%);
+    padding: var(--space-16) 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.finalCta::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+        radial-gradient(circle at 50% 50%, rgba(99, 102, 241, 0.15) 0%, transparent 50%);
+    animation: float 15s ease-in-out infinite;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .heroTitle {
+        font-size: var(--font-size-4xl);
+    }
+
+    .heroSubtitle {
+        font-size: var(--font-size-xl);
+    }
+
+    .heroDescription {
+        font-size: var(--font-size-base);
+    }
+
+    .servicesGrid,
+    .industriesGrid,
+    .metricsGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .approachContent {
+        grid-template-columns: 1fr;
+    }
+
+    .systemDiagram {
+        grid-template-columns: 1fr;
+    }
+}

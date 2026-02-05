@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://nexyra-ai.com/sitemap.xml

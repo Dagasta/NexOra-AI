@@ -1,0 +1,181 @@
+.industryPage {
+    min-height: 100vh;
+}
+
+.industryHero {
+    padding: var(--space-16) 0 var(--space-12);
+    background: linear-gradient(135deg, var(--color-void-black) 0%, var(--color-deep-space) 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.industryHero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="grid" width="100" height="100" patternUnits="userSpaceOnUse"><path d="M 100 0 L 0 0 0 100" fill="none" stroke="rgba(138,101,255,0.1)" stroke-width="1"/></pattern></defs><rect width="100%" height="100%" fill="url(%23grid)"/></svg>');
+    opacity: 0.3;
+}
+
+.breadcrumb {
+    font-size: var(--font-size-sm);
+    color: var(--color-platinum-silver);
+    margin-bottom: var(--space-4);
+    position: relative;
+    z-index: 1;
+}
+
+.breadcrumb a {
+    color: var(--color-electric-plasma);
+    text-decoration: none;
+    transition: color var(--transition-base);
+}
+
+.breadcrumb a:hover {
+    color: var(--color-hyper-neon-purple);
+}
+
+.industryHero h1 {
+    font-size: var(--font-size-4xl);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--space-4);
+    position: relative;
+    z-index: 1;
+}
+
+.industrySubtitle {
+    font-size: var(--font-size-xl);
+    color: var(--color-platinum-silver);
+    position: relative;
+    z-index: 1;
+}
+
+.industryContent {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.industryContent h2 {
+    margin-top: var(--space-10);
+    margin-bottom: var(--space-4);
+    font-size: var(--font-size-2xl);
+}
+
+.industryContent h3 {
+    margin-top: var(--space-6);
+    margin-bottom: var(--space-3);
+    font-size: var(--font-size-xl);
+    color: var(--color-hyper-neon-purple);
+}
+
+.industryContent h4 {
+    margin-bottom: var(--space-2);
+    font-size: var(--font-size-lg);
+}
+
+.industryContent p {
+    margin-bottom: var(--space-4);
+    line-height: 1.7;
+    color: var(--color-platinum-silver);
+}
+
+.useCases {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-6);
+    margin: var(--space-8) 0;
+}
+
+.outcomesList {
+    list-style: none;
+    padding: 0;
+    margin: var(--space-6) 0;
+}
+
+.outcomesList li {
+    padding: var(--space-3) 0;
+    padding-left: var(--space-6);
+    position: relative;
+    color: var(--color-platinum-silver);
+    line-height: 1.7;
+}
+
+.outcomesList li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--color-electric-plasma);
+    font-weight: var(--font-weight-bold);
+}
+
+.outcomesList li strong {
+    color: var(--color-hyper-neon-purple);
+    font-weight: var(--font-weight-semibold);
+}
+
+.relatedServices {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-6);
+    margin-top: var(--space-8);
+}
+
+.relatedServices .card {
+    text-decoration: none;
+    transition: transform var(--transition-base);
+}
+
+.relatedServices .card:hover {
+    transform: translateY(-4px);
+}
+
+.relatedServices h4 {
+    color: var(--color-pure-white);
+    margin-bottom: var(--space-2);
+}
+
+.relatedServices p {
+    color: var(--color-platinum-silver);
+    font-size: var(--font-size-sm);
+    margin: 0;
+}
+
+.industryCta {
+    padding: var(--space-16) 0;
+    background: linear-gradient(135deg, var(--color-deep-space) 0%, var(--color-void-black) 100%);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.industryCta h2 {
+    margin-bottom: var(--space-4);
+    font-size: var(--font-size-3xl);
+}
+
+.industryCta p {
+    font-size: var(--font-size-lg);
+    color: var(--color-platinum-silver);
+    margin-bottom: var(--space-6);
+}
+
+@media (max-width: 768px) {
+    .industryHero h1 {
+        font-size: var(--font-size-3xl);
+    }
+
+    .industrySubtitle {
+        font-size: var(--font-size-lg);
+    }
+
+    .useCases {
+        grid-template-columns: 1fr;
+    }
+
+    .relatedServices {
+        grid-template-columns: 1fr;
+    }
+}

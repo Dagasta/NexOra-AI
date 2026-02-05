@@ -1,0 +1,484 @@
+/* ============================================
+   Nexyra CINEMATIC AI ANIMATIONS
+   Based on 3D Logo Animation Style
+   ============================================ */
+
+/* === LENS FLARE EFFECTS === */
+@keyframes lensFlare {
+
+    0%,
+    100% {
+        opacity: 0;
+        transform: scale(0.5) rotate(0deg);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.5) rotate(180deg);
+    }
+}
+
+.lens-flare {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.8) 0%, rgba(0, 217, 255, 0.4) 30%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+    animation: lensFlare 4s ease-in-out infinite;
+    filter: blur(20px);
+}
+
+.lens-flare-small {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(138, 101, 255, 0.6) 40%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+    animation: lensFlare 3s ease-in-out infinite reverse;
+    filter: blur(10px);
+}
+
+/* === LIGHT RAYS === */
+@keyframes lightRay {
+    0% {
+        transform: translateX(-100%) rotate(-45deg);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.6;
+    }
+
+    100% {
+        transform: translateX(200%) rotate(-45deg);
+        opacity: 0;
+    }
+}
+
+.light-ray {
+    position: absolute;
+    width: 2px;
+    height: 200%;
+    background: linear-gradient(to bottom,
+            transparent 0%,
+            rgba(0, 217, 255, 0.8) 50%,
+            transparent 100%);
+    animation: lightRay 8s linear infinite;
+    pointer-events: none;
+}
+
+.light-ray:nth-child(2) {
+    animation-delay: 2s;
+    left: 30%;
+}
+
+.light-ray:nth-child(3) {
+    animation-delay: 4s;
+    left: 60%;
+    background: linear-gradient(to bottom,
+            transparent 0%,
+            rgba(255, 165, 0, 0.6) 50%,
+            transparent 100%);
+}
+
+/* === 3D METALLIC TEXT EFFECT === */
+.text-3d-metallic {
+    background: linear-gradient(135deg,
+            #00D9FF 0%,
+            #8A65FF 25%,
+            #ffffff 50%,
+            #FFA500 75%,
+            #00D9FF 100%);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: metallicShine 3s ease-in-out infinite;
+    text-shadow:
+        0 0 20px rgba(0, 217, 255, 0.5),
+        0 0 40px rgba(138, 101, 255, 0.3),
+        0 5px 10px rgba(0, 0, 0, 0.5);
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
+}
+
+@keyframes metallicShine {
+
+    0%,
+    100% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+/* === FLOWING ENERGY WAVES === */
+@keyframes energyWave {
+    0% {
+        transform: translateX(-100%) translateY(0) scaleY(1);
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 0.8;
+    }
+
+    90% {
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: translateX(100%) translateY(-20px) scaleY(1.2);
+        opacity: 0;
+    }
+}
+
+.energy-wave {
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(90deg,
+            transparent 0%,
+            rgba(0, 217, 255, 0.3) 20%,
+            rgba(0, 217, 255, 0.6) 50%,
+            rgba(0, 217, 255, 0.3) 80%,
+            transparent 100%);
+    filter: blur(15px);
+    animation: energyWave 6s ease-in-out infinite;
+    pointer-events: none;
+}
+
+.energy-wave:nth-child(2) {
+    animation-delay: 2s;
+    background: linear-gradient(90deg,
+            transparent 0%,
+            rgba(138, 101, 255, 0.3) 20%,
+            rgba(138, 101, 255, 0.6) 50%,
+            rgba(138, 101, 255, 0.3) 80%,
+            transparent 100%);
+}
+
+.energy-wave:nth-child(3) {
+    animation-delay: 4s;
+    background: linear-gradient(90deg,
+            transparent 0%,
+            rgba(255, 165, 0, 0.3) 20%,
+            rgba(255, 165, 0, 0.5) 50%,
+            rgba(255, 165, 0, 0.3) 80%,
+            transparent 100%);
+}
+
+/* === MOTION BLUR LINES === */
+@keyframes motionBlur {
+    0% {
+        transform: translateX(-200%) rotate(-10deg);
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0.6;
+    }
+
+    80% {
+        opacity: 0.6;
+    }
+
+    100% {
+        transform: translateX(200%) rotate(-10deg);
+        opacity: 0;
+    }
+}
+
+.motion-blur-line {
+    position: absolute;
+    width: 300px;
+    height: 2px;
+    background: linear-gradient(90deg,
+            transparent 0%,
+            rgba(255, 165, 0, 0.8) 50%,
+            transparent 100%);
+    filter: blur(3px);
+    animation: motionBlur 4s linear infinite;
+    pointer-events: none;
+}
+
+.motion-blur-line:nth-child(2) {
+    animation-delay: 1s;
+    top: 40%;
+    background: linear-gradient(90deg,
+            transparent 0%,
+            rgba(0, 217, 255, 0.6) 50%,
+            transparent 100%);
+}
+
+.motion-blur-line:nth-child(3) {
+    animation-delay: 2s;
+    top: 60%;
+}
+
+/* === CINEMATIC PARTICLES === */
+@keyframes cinematicParticle {
+    0% {
+        transform: translate(0, 0) scale(0);
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(var(--tx), var(--ty)) scale(1);
+        opacity: 0;
+    }
+}
+
+.cinematic-particle {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(0, 217, 255, 0.8) 50%, transparent 100%);
+    border-radius: 50%;
+    pointer-events: none;
+    animation: cinematicParticle 5s ease-out infinite;
+    filter: blur(1px);
+}
+
+.cinematic-particle:nth-child(odd) {
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(255, 165, 0, 0.8) 50%, transparent 100%);
+}
+
+/* === GLOWING EDGES === */
+.glow-edge {
+    position: relative;
+}
+
+.glow-edge::before {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    background: linear-gradient(45deg,
+            #00D9FF,
+            #8A65FF,
+            #FFA500,
+            #00D9FF);
+    background-size: 300% 300%;
+    border-radius: inherit;
+    z-index: -1;
+    filter: blur(10px);
+    opacity: 0.7;
+    animation: glowEdgeRotate 4s linear infinite;
+}
+
+@keyframes glowEdgeRotate {
+
+    0%,
+    100% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+/* === DEPTH OF FIELD BLUR === */
+.depth-blur-near {
+    filter: blur(0px);
+    transform: translateZ(0);
+    animation: depthPulse 4s ease-in-out infinite;
+}
+
+@keyframes depthPulse {
+
+    0%,
+    100% {
+        filter: blur(0px);
+        transform: scale(1);
+    }
+
+    50% {
+        filter: blur(2px);
+        transform: scale(1.02);
+    }
+}
+
+/* === CHROME REFLECTION === */
+@keyframes chromeReflection {
+
+    0%,
+    100% {
+        background-position: 0% 0%;
+    }
+
+    50% {
+        background-position: 100% 100%;
+    }
+}
+
+.chrome-surface {
+    background: linear-gradient(135deg,
+            rgba(255, 255, 255, 0.1) 0%,
+            rgba(0, 217, 255, 0.2) 25%,
+            rgba(138, 101, 255, 0.2) 50%,
+            rgba(255, 165, 0, 0.2) 75%,
+            rgba(255, 255, 255, 0.1) 100%);
+    background-size: 200% 200%;
+    animation: chromeReflection 6s ease-in-out infinite;
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow:
+        0 8px 32px rgba(0, 217, 255, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.3),
+        inset 0 -1px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* === STAR BURST === */
+@keyframes starBurst {
+
+    0%,
+    100% {
+        transform: scale(0) rotate(0deg);
+        opacity: 0;
+    }
+
+    50% {
+        transform: scale(1) rotate(180deg);
+        opacity: 1;
+    }
+}
+
+.star-burst {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background:
+        linear-gradient(0deg, transparent 48%, rgba(255, 255, 255, 0.8) 50%, transparent 52%),
+        linear-gradient(45deg, transparent 48%, rgba(0, 217, 255, 0.6) 50%, transparent 52%),
+        linear-gradient(90deg, transparent 48%, rgba(255, 255, 255, 0.8) 50%, transparent 52%),
+        linear-gradient(135deg, transparent 48%, rgba(0, 217, 255, 0.6) 50%, transparent 52%);
+    animation: starBurst 3s ease-in-out infinite;
+    pointer-events: none;
+    filter: blur(2px);
+}
+
+/* === BOKEH EFFECT === */
+@keyframes bokeh {
+
+    0%,
+    100% {
+        transform: translate(0, 0) scale(1);
+        opacity: 0.3;
+    }
+
+    50% {
+        transform: translate(var(--bx), var(--by)) scale(1.5);
+        opacity: 0.8;
+    }
+}
+
+.bokeh {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(0, 217, 255, 0.4) 0%, transparent 70%);
+    animation: bokeh 8s ease-in-out infinite;
+    pointer-events: none;
+    filter: blur(15px);
+}
+
+.bokeh:nth-child(2n) {
+    background: radial-gradient(circle, rgba(255, 165, 0, 0.3) 0%, transparent 70%);
+    animation-duration: 10s;
+}
+
+.bokeh:nth-child(3n) {
+    background: radial-gradient(circle, rgba(138, 101, 255, 0.4) 0%, transparent 70%);
+    animation-duration: 12s;
+}
+
+/* === ENERGY PULSE === */
+@keyframes energyPulse {
+
+    0%,
+    100% {
+        box-shadow:
+            0 0 20px rgba(0, 217, 255, 0.4),
+            0 0 40px rgba(0, 217, 255, 0.2),
+            inset 0 0 20px rgba(0, 217, 255, 0.1);
+    }
+
+    50% {
+        box-shadow:
+            0 0 40px rgba(0, 217, 255, 0.8),
+            0 0 80px rgba(0, 217, 255, 0.4),
+            inset 0 0 40px rgba(0, 217, 255, 0.3);
+    }
+}
+
+.energy-pulse {
+    animation: energyPulse 2s ease-in-out infinite;
+}
+
+/* === HOLOGRAPHIC SHIMMER (Enhanced) === */
+@keyframes holographicShimmer {
+    0% {
+        background-position: -200% center;
+    }
+
+    100% {
+        background-position: 200% center;
+    }
+}
+
+.holographic-enhanced {
+    position: relative;
+    background: linear-gradient(135deg,
+            rgba(10, 14, 39, 0.8),
+            rgba(26, 31, 77, 0.8));
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(138, 101, 255, 0.3);
+    overflow: hidden;
+}
+
+.holographic-enhanced::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(90deg,
+            transparent 0%,
+            rgba(0, 217, 255, 0.1) 25%,
+            rgba(255, 255, 255, 0.3) 50%,
+            rgba(255, 165, 0, 0.1) 75%,
+            transparent 100%);
+    background-size: 50% 100%;
+    animation: holographicShimmer 3s linear infinite;
+    pointer-events: none;
+}
+
+/* === CONTAINER FOR CINEMATIC EFFECTS === */
+.cinematic-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.cinematic-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+}

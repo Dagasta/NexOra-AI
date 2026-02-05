@@ -1,0 +1,108 @@
+.footer {
+    background: var(--color-void-black);
+    border-top: 1px solid rgba(139, 92, 246, 0.2);
+    padding: var(--space-16) 0 var(--space-8);
+    margin-top: var(--space-16);
+}
+
+.footerContent {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: var(--space-8);
+    margin-bottom: var(--space-8);
+}
+
+.footerSection h3,
+.footerSection h4 {
+    margin-bottom: var(--space-4);
+}
+
+.footerLogo {
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-pure-white);
+    letter-spacing: 0.05em;
+    margin-bottom: var(--space-2);
+}
+
+.footerTagline {
+    font-size: var(--font-size-sm);
+    color: var(--color-electric-cyan);
+    margin-bottom: var(--space-3);
+    font-weight: var(--font-weight-medium);
+}
+
+.footerDescription {
+    font-size: var(--font-size-sm);
+    color: var(--color-neutral-slate);
+    line-height: 1.6;
+    max-width: 300px;
+}
+
+.footerTitle {
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-pure-white);
+}
+
+.footerLinks {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footerLinks li {
+    margin-bottom: var(--space-2);
+}
+
+.footerLinks a {
+    font-size: var(--font-size-sm);
+    color: var(--color-neutral-slate);
+    transition: color var(--transition-base);
+}
+
+.footerLinks a:hover {
+    color: var(--color-electric-plasma);
+}
+
+.footerBottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: var(--space-6);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.copyright {
+    font-size: var(--font-size-sm);
+    color: var(--color-neutral-slate);
+    margin: 0;
+}
+
+.footerBottomLinks {
+    display: flex;
+    gap: var(--space-4);
+}
+
+.footerBottomLinks a {
+    font-size: var(--font-size-sm);
+    color: var(--color-neutral-slate);
+    transition: color var(--transition-base);
+}
+
+.footerBottomLinks a:hover {
+    color: var(--color-electric-cyan);
+}
+
+@media (max-width: 768px) {
+    .footerContent {
+        grid-template-columns: 1fr;
+        gap: var(--space-6);
+    }
+
+    .footerBottom {
+        flex-direction: column;
+        gap: var(--space-4);
+        text-align: center;
+    }
+}
