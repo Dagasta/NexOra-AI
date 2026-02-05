@@ -3,7 +3,7 @@ import Link from 'next/link'
 import styles from '../service.module.css'
 
 export const metadata: Metadata = {
-    title: 'Conversational AI Systems | AI Chatbots & Voice Agents | Nexyra',
+    title: 'Conversational AI Systems | AI Chatbots & Voice Agents | Nexyrra',
     description: 'Build multi-channel conversational AI systems with context-aware chatbots, voice agents, and intelligent customer service automation.',
     keywords: 'conversational AI, AI chatbots, voice AI, customer service automation, AI agents, natural language processing',
 }
@@ -28,7 +28,7 @@ export default function ConversationalAI() {
                     <div className={styles.serviceContent}>
                         <h2>Overview</h2>
                         <p>
-                            Conversational AI is more than chatbots. Nexyra builds intelligent agents that understand intent, maintain context across conversations, integrate with your systems, and deliver personalized experiences across web, mobile, voice, and messaging platforms.
+                            Conversational AI is more than chatbots. Nexyrra builds intelligent agents that understand intent, maintain context across conversations, integrate with your systems, and deliver personalized experiences across web, mobile, voice, and messaging platforms.
                         </p>
 
                         <h2>Capabilities</h2>

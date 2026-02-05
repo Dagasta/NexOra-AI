@@ -3,7 +3,7 @@ import Link from 'next/link'
 import styles from '../industry.module.css'
 
 export const metadata: Metadata = {
-    title: 'AI for Manufacturing | Industrial AI Solutions | Nexyra',
+    title: 'AI for Manufacturing | Industrial AI Solutions | Nexyrra',
     description: 'AI solutions for manufacturing: predictive maintenance, quality control, production optimization, supply chain intelligence, and smart factory automation.',
     keywords: 'manufacturing AI, industrial AI, predictive maintenance, quality control AI, smart factory, Industry 4.0',
 }

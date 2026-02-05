@@ -3,7 +3,7 @@ import Link from 'next/link'
 import styles from '../service.module.css'
 
 export const metadata: Metadata = {
-    title: 'AI Strategy & Advisory Services | Enterprise AI Consulting | Nexyra',
+    title: 'AI Strategy & Advisory Services | Enterprise AI Consulting | Nexyrra',
     description: 'Strategic AI consulting and advisory services. AI roadmap development, ROI modeling, transformation planning, and executive guidance for enterprise AI adoption.',
     keywords: 'AI strategy, AI consulting, AI advisory, AI transformation, AI roadmap, enterprise AI planning',
 }
@@ -28,7 +28,7 @@ export default function AIStrategyAdvisory() {
                     <div className={styles.serviceContent}>
                         <h2>Overview</h2>
                         <p>
-                            Successful AI transformation requires more than technology—it requires strategy. Nexyra provides executive-level AI advisory services that align AI initiatives with business objectives, quantify ROI, and create actionable roadmaps for sustainable AI adoption.
+                            Successful AI transformation requires more than technology—it requires strategy. Nexyrra provides executive-level AI advisory services that align AI initiatives with business objectives, quantify ROI, and create actionable roadmaps for sustainable AI adoption.
                         </p>
 
                         <h2>Capabilities</h2>

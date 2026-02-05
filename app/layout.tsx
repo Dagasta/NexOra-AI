@@ -16,29 +16,29 @@ const inter = Inter({
 
 export const metadata: Metadata = {
     title: {
-        default: 'NEXYRA AI | Enterprise AI Solutions & Autonomous Systems',
-        template: '%s | NEXYRA AI'
+        default: 'Nexyrra AI | Enterprise AI Solutions & Autonomous Systems',
+        template: '%s | Nexyrra AI'
     },
-    description: 'NEXYRA is a world-class AI agency architecting industrial-grade autonomous systems, intelligent automation, and custom enterprise AI infrastructure.',
-    keywords: ['AI Agency', 'Enterprise AI Solutions', 'Autonomous Systems', 'AI Automation', 'AI Strategy', 'Industrial AI', 'Machine Learning Development', 'Nexyra AI'],
-    authors: [{ name: 'NEXYRA AI Team' }],
-    creator: 'NEXYRA AI',
-    publisher: 'NEXYRA AI',
-    metadataBase: new URL('https://nexyra-ai.com'),
+    description: 'Nexyrra is a world-class AI agency architecting industrial-grade autonomous systems, intelligent automation, and custom enterprise AI infrastructure.',
+    keywords: ['AI Agency', 'Enterprise AI Solutions', 'Autonomous Systems', 'AI Automation', 'AI Strategy', 'Industrial AI', 'Machine Learning Development', 'Nexyrra AI'],
+    authors: [{ name: 'Nexyrra AI Team' }],
+    creator: 'Nexyrra AI',
+    publisher: 'Nexyrra AI',
+    metadataBase: new URL('https://Nexyrra-ai.com'),
     alternates: {
         canonical: '/',
     },
     openGraph: {
-        title: 'NEXYRA AI | Enterprise AI Solutions & Autonomous Systems',
+        title: 'Nexyrra AI | Enterprise AI Solutions & Autonomous Systems',
         description: 'Architecting the future of enterprise intelligence with industrial-grade AI infrastructure.',
-        url: 'https://nexyra-ai.com',
-        siteName: 'NEXYRA AI',
+        url: 'https://Nexyrra-ai.com',
+        siteName: 'Nexyrra AI',
         images: [
             {
                 url: '/og-image.png',
                 width: 1200,
                 height: 630,
-                alt: 'NEXYRA AI - Enterprise Intelligence',
+                alt: 'Nexyrra AI - Enterprise Intelligence',
             },
         ],
         locale: 'en_US',
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'NEXYRA AI | Enterprise AI Solutions',
+        title: 'Nexyrra AI | Enterprise AI Solutions',
         description: 'Industrial-grade AI infrastructure for the autonomous enterprise.',
         images: ['/og-image.png'],
     },
@@ -77,13 +77,13 @@ export default function RootLayout({
                         __html: JSON.stringify({
                             '@context': 'https://schema.org',
                             '@type': 'Organization',
-                            name: 'NEXYRA AI',
+                            name: 'Nexyrra AI',
                             description: 'Enterprise AI solutions and autonomous systems company',
-                            url: 'https://nexyra-ai.com',
-                            logo: 'https://nexyra-ai.com/logo.png',
+                            url: 'https://Nexyrra-ai.com',
+                            logo: 'https://Nexyrra-ai.com/logo.png',
                             sameAs: [
-                                'https://twitter.com/nexyra_ai',
-                                'https://linkedin.com/company/nexyra-ai'
+                                'https://twitter.com/Nexyrra_ai',
+                                'https://linkedin.com/company/Nexyrra-ai'
                             ],
                             contactPoint: {
                                 '@type': 'ContactPoint',
@@ -102,7 +102,7 @@ export default function RootLayout({
                             serviceType: 'AI Systems Architecture',
                             provider: {
                                 '@type': 'Organization',
-                                name: 'NEXYRA AI'
+                                name: 'Nexyrra AI'
                             },
                             description: 'Professional enterprise AI systems architecture and deployment.'
                         }),

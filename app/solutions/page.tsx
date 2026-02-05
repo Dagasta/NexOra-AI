@@ -3,7 +3,7 @@ import Link from 'next/link'
 import styles from './solutions.module.css'
 
 export const metadata: Metadata = {
-    title: 'AI Solutions | Custom AI Systems & Platforms | Nexyra',
+    title: 'AI Solutions | Custom AI Systems & Platforms | Nexyrra',
     description: 'Comprehensive AI solutions combining multiple services for complete digital transformation. End-to-end AI platforms for enterprise operations.',
     keywords: 'AI solutions, complete AI systems, AI platforms, digital transformation, enterprise AI',
 }

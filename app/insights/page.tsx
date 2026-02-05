@@ -3,8 +3,8 @@ import Link from 'next/link'
 import styles from './insights.module.css'
 
 export const metadata: Metadata = {
-    title: 'AI Insights & Thought Leadership | Nexyra',
-    description: 'Expert insights on enterprise AI, automation, digital transformation, and AI strategy from Nexyra\'s team of AI architects and consultants.',
+    title: 'AI Insights & Thought Leadership | Nexyrra',
+    description: 'Expert insights on enterprise AI, automation, digital transformation, and AI strategy from Nexyrra\'s team of AI architects and consultants.',
     keywords: 'AI insights, AI thought leadership, enterprise AI trends, AI strategy, automation insights',
 }
 

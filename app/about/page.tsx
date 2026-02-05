@@ -2,9 +2,9 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-    title: 'About Nexyra | Enterprise AI Systems Company',
-    description: 'Nexyra architects intelligent systems for enterprise operations. Learn about our approach to AI transformation and strategic AI partnership.',
-    keywords: 'about Nexyra, AI company, enterprise AI, AI systems company',
+    title: 'About Nexyrra | Enterprise AI Systems Company',
+    description: 'Nexyrra architects intelligent systems for enterprise operations. Learn about our approach to AI transformation and strategic AI partnership.',
+    keywords: 'about Nexyrra, AI company, enterprise AI, AI systems company',
 }
 
 export default function About() {
@@ -17,7 +17,7 @@ export default function About() {
                 position: 'relative'
             }}>
                 <div className="container text-center" style={{ position: 'relative', zIndex: 1 }}>
-                    <h1>About Nexyra</h1>
+                    <h1>About Nexyrra</h1>
                     <p style={{ fontSize: 'var(--font-size-xl)', color: 'var(--color-platinum-silver)', maxWidth: '700px', margin: '0 auto' }}>
                         Next Aura — The Next Presence of Intelligence
                     </p>
@@ -47,7 +47,7 @@ export default function About() {
                     <div style={{ maxWidth: '900px', margin: '0 auto' }}>
                         <h2 className="text-3d-metallic" style={{ fontSize: 'var(--font-size-2xl)' }}>Our Mission</h2>
                         <p style={{ fontSize: 'var(--font-size-lg)', lineHeight: '1.8' }}>
-                            Nexyra exists to architect the next generation of enterprise intelligence. We transform how organizations operate by building AI systems that don't just automate tasks—they understand context, make decisions, and continuously optimize for better outcomes.
+                            Nexyrra exists to architect the next generation of enterprise intelligence. We transform how organizations operate by building AI systems that don't just automate tasks—they understand context, make decisions, and continuously optimize for better outcomes.
                         </p>
 
                         <h2 className="text-3d-metallic" style={{ marginTop: 'var(--space-10)', fontSize: 'var(--font-size-2xl)' }}>Our Approach</h2>
@@ -73,7 +73,7 @@ export default function About() {
                             </div>
                         </div>
 
-                        <h2 className="text-3d-metallic" style={{ marginTop: 'var(--space-10)', fontSize: 'var(--font-size-2xl)' }}>Why Nexyra</h2>
+                        <h2 className="text-3d-metallic" style={{ marginTop: 'var(--space-10)', fontSize: 'var(--font-size-2xl)' }}>Why Nexyrra</h2>
                         <ul style={{ listStyle: 'none', padding: 0 }}>
                             <li className="holographic-enhanced" style={{ padding: 'var(--space-4)', marginBottom: 'var(--space-3)', borderLeft: '3px solid var(--color-hyper-neon-purple)', borderRadius: 'var(--radius-sm)' }}>
                                 <strong style={{ color: 'var(--color-electric-plasma)' }}>Deep Technical Expertise:</strong> Our team combines AI research, enterprise architecture, and industry-specific knowledge.

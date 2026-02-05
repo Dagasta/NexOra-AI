@@ -3,7 +3,7 @@ import Link from 'next/link'
 import styles from '../service.module.css'
 
 export const metadata: Metadata = {
-    title: 'Enterprise AI Integration Services | CRM, ERP AI Augmentation | Nexyra',
+    title: 'Enterprise AI Integration Services | CRM, ERP AI Augmentation | Nexyrra',
     description: 'Seamlessly integrate AI with existing CRM, ERP, and legacy systems. Enterprise AI integration for Salesforce, SAP, Oracle, and custom platforms.',
     keywords: 'enterprise AI integration, CRM AI, ERP AI, legacy system modernization, AI middleware, system integration',
 }
@@ -28,7 +28,7 @@ export default function EnterpriseAIIntegration() {
                     <div className={styles.serviceContent}>
                         <h2>Overview</h2>
                         <p>
-                            Your existing systems hold valuable data and processes. Nexyra integrates AI capabilities into your current CRM, ERP, and legacy platforms—enhancing them with intelligence without disrupting operations or requiring complete replacement.
+                            Your existing systems hold valuable data and processes. Nexyrra integrates AI capabilities into your current CRM, ERP, and legacy platforms—enhancing them with intelligence without disrupting operations or requiring complete replacement.
                         </p>
 
                         <h2>Capabilities</h2>

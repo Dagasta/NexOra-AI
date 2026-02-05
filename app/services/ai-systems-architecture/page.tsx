@@ -3,7 +3,7 @@ import Link from 'next/link'
 import styles from '../service.module.css'
 
 export const metadata: Metadata = {
-    title: 'AI Systems Architecture Services | Custom AI Infrastructure | Nexyra',
+    title: 'AI Systems Architecture Services | Custom AI Infrastructure | Nexyrra',
     description: 'Design and build scalable AI infrastructure for enterprise operations. Custom AI systems architecture, multi-agent orchestration, and MLOps implementation.',
     keywords: 'AI systems architecture, custom AI infrastructure, enterprise AI development, MLOps, AI orchestration',
 }
@@ -33,7 +33,7 @@ export default function AISystemsArchitecture() {
                     <div className={styles.serviceContent}>
                         <h2>Overview</h2>
                         <p>
-                            AI systems architecture is the foundation of successful enterprise AI transformation. Nexyra designs and builds custom AI infrastructure that scales with your operations, integrates seamlessly with existing systems, and delivers measurable business outcomes.
+                            AI systems architecture is the foundation of successful enterprise AI transformation. Nexyrra designs and builds custom AI infrastructure that scales with your operations, integrates seamlessly with existing systems, and delivers measurable business outcomes.
                         </p>
                         <p>
                             We don't deploy isolated AI tools. We architect interconnected intelligence layers where agents, workflows, data, and integrations work together as a unified system.

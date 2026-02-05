@@ -3,7 +3,7 @@ import Link from 'next/link'
 import styles from '../insights.module.css'
 
 export const metadata: Metadata = {
-    title: 'The ROI of Enterprise AI | Nexyra Insights',
+    title: 'The ROI of Enterprise AI | Nexyrra Insights',
     description: 'How leading organizations quantify and maximize returns from AI investments through strategic implementation and continuous optimization.',
     keywords: 'AI ROI, enterprise AI investment, AI returns, AI business value',
 }

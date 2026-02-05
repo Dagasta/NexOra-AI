@@ -10,7 +10,7 @@ export default function Home() {
                     <div className={styles.heroContent}>
                         <div className="reveal-on-scroll">
                             <h1 className={`${styles.heroTitle} text-3d-metallic`}>
-                                NEXYRA<br />
+                                Nexyrra<br />
                                 <span className={styles.heroSubtitle}>Architecting Systematic Intelligence</span>
                             </h1>
                         </div>
@@ -85,7 +85,7 @@ export default function Home() {
                 <div className="container" style={{ position: 'relative', zIndex: 1 }}>
                     <div className="text-center" style={{ marginBottom: 'var(--space-16)' }}>
                         <h2 className="text-3d-metallic" style={{ fontSize: 'var(--font-size-5xl)' }}>
-                            The NEXYRA Ecosystem
+                            The Nexyrra Ecosystem
                         </h2>
                         <p className="glow-text" style={{ fontSize: 'var(--font-size-lg)', maxWidth: '800px', margin: '0 auto' }}>
                             Precision-engineered AI systems designed to solve the most complex enterprise challenges
@@ -202,7 +202,7 @@ export default function Home() {
                         </h2>
                     </div>
                     <p className="glow-text" style={{ fontSize: 'var(--font-size-xl)', marginBottom: 'var(--space-12)', maxWidth: '700px', margin: '0 auto var(--space-12)' }}>
-                        Join the elite organizations architecting their future with NEXYRA.
+                        Join the elite organizations architecting their future with Nexyrra.
                     </p>
                     <Link href="/contact" className="btn btn-primary energy-pulse" style={{ fontSize: 'var(--font-size-xl)', padding: 'var(--space-6) var(--space-12)' }}>
                         Establish Connection

@@ -3,7 +3,7 @@ import Link from 'next/link'
 import styles from '../industry.module.css'
 
 export const metadata: Metadata = {
-    title: 'AI for E-commerce | Retail AI Solutions | Nexyra',
+    title: 'AI for E-commerce | Retail AI Solutions | Nexyrra',
     description: 'AI solutions for e-commerce: personalization engines, dynamic pricing, inventory optimization, customer service automation, and conversion optimization.',
     keywords: 'ecommerce AI, retail AI, personalization, dynamic pricing, inventory optimization, conversion optimization',
 }

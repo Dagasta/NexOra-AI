@@ -3,7 +3,7 @@ import Link from 'next/link'
 import styles from '../industry.module.css'
 
 export const metadata: Metadata = {
-    title: 'AI for Financial Services | Banking & FinTech AI Solutions | Nexyra',
+    title: 'AI for Financial Services | Banking & FinTech AI Solutions | Nexyrra',
     description: 'Enterprise AI for financial services: fraud detection, risk management, algorithmic trading, customer intelligence, and regulatory compliance automation.',
     keywords: 'financial services AI, banking AI, fraud detection, risk management AI, fintech AI, algorithmic trading',
 }

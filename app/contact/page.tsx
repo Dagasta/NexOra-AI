@@ -2,9 +2,9 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-    title: 'Contact Nexyra | Schedule AI Consultation | Enterprise AI Solutions',
-    description: 'Get in touch with Nexyra to discuss your AI transformation needs. Schedule a consultation with our AI systems experts.',
-    keywords: 'contact Nexyra, AI consultation, enterprise AI contact, schedule meeting',
+    title: 'Contact Nexyrra | Schedule AI Consultation | Enterprise AI Solutions',
+    description: 'Get in touch with Nexyrra to discuss your AI transformation needs. Schedule a consultation with our AI systems experts.',
+    keywords: 'contact Nexyrra, AI consultation, enterprise AI contact, schedule meeting',
 }
 
 export default function Contact() {
@@ -143,8 +143,8 @@ export default function Contact() {
                                 Or reach us directly:
                             </p>
                             <p style={{ fontSize: 'var(--font-size-lg)' }}>
-                                <a href="mailto:contact@Nexyra.com" className="neon-text" style={{ color: 'var(--color-electric-plasma)' }}>
-                                    contact@Nexyra.com
+                                <a href="mailto:contact@Nexyrra.com" className="neon-text" style={{ color: 'var(--color-electric-plasma)' }}>
+                                    contact@Nexyrra.com
                                 </a>
                             </p>
                         </div>

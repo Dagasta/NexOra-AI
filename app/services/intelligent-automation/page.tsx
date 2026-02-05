@@ -3,7 +3,7 @@ import Link from 'next/link'
 import styles from '../service.module.css'
 
 export const metadata: Metadata = {
-    title: 'Intelligent Automation Services | Business Process Automation | Nexyra',
+    title: 'Intelligent Automation Services | Business Process Automation | Nexyrra',
     description: 'End-to-end business process automation with AI. Automate workflows, reduce operational costs, and optimize continuously with intelligent automation systems.',
     keywords: 'intelligent automation, business process automation, AI workflow automation, RPA, process optimization',
 }
@@ -28,7 +28,7 @@ export default function IntelligentAutomation() {
                     <div className={styles.serviceContent}>
                         <h2>Overview</h2>
                         <p>
-                            Intelligent automation goes beyond traditional RPA. Nexyra builds AI-powered automation systems that don't just execute tasks—they understand context, make decisions, learn from outcomes, and continuously optimize performance.
+                            Intelligent automation goes beyond traditional RPA. Nexyrra builds AI-powered automation systems that don't just execute tasks—they understand context, make decisions, learn from outcomes, and continuously optimize performance.
                         </p>
                         <p>
                             From document processing to customer service to supply chain management, our intelligent automation solutions transform manual, time-consuming processes into streamlined, AI-driven workflows.

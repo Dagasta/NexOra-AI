@@ -3,7 +3,7 @@ import Link from 'next/link'
 import styles from '../industry.module.css'
 
 export const metadata: Metadata = {
-    title: 'AI for Real Estate | Property Management AI Solutions | Nexyra',
+    title: 'AI for Real Estate | Property Management AI Solutions | Nexyrra',
     description: 'AI solutions for real estate: intelligent property management, automated tenant screening, predictive maintenance, and smart building operations.',
     keywords: 'real estate AI, property management AI, smart buildings, predictive maintenance, tenant screening AI',
 }

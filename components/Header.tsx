@@ -28,7 +28,7 @@ export default function Header() {
                         position: 'relative',
                         display: 'inline-block'
                     }}>
-                        Nexyra
+                        Nexyrra
                         <span style={{
                             position: 'absolute',
                             inset: '-4px',

@@ -7,7 +7,7 @@ import styles from './WhatsAppButton.module.css'
 export default function WhatsAppButton() {
     const [isVisible, setIsVisible] = useState(false)
     const phoneNumber = '+971503953988'
-    const message = encodeURIComponent('Hello! I\'m interested in learning more about Nexyra\'s AI solutions.')
+    const message = encodeURIComponent('Hello! I\'m interested in learning more about Nexyrra\'s AI solutions.')
     const whatsappUrl = `https://wa.me/${phoneNumber.replace('+', '')}?text=${message}`
 
     useEffect(() => {

@@ -3,7 +3,7 @@ import Link from 'next/link'
 import styles from './industries.module.css'
 
 export const metadata: Metadata = {
-    title: 'Industries We Serve | AI Solutions by Industry | Nexyra',
+    title: 'Industries We Serve | AI Solutions by Industry | Nexyrra',
     description: 'Industry-specific AI solutions for real estate, healthcare, financial services, e-commerce, manufacturing, and professional services.',
     keywords: 'AI by industry, industry AI solutions, vertical AI, sector-specific AI',
 }

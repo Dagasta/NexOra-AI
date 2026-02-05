@@ -3,7 +3,7 @@ import Link from 'next/link'
 import styles from '../service.module.css'
 
 export const metadata: Metadata = {
-    title: 'AI-Powered Applications | Custom AI Web & Mobile Apps | Nexyra',
+    title: 'AI-Powered Applications | Custom AI Web & Mobile Apps | Nexyrra',
     description: 'Build custom AI-powered web and mobile applications with embedded intelligence. Enterprise-grade AI apps for iOS, Android, and web platforms.',
     keywords: 'AI applications, AI-powered apps, custom AI development, intelligent mobile apps, AI web applications',
 }
@@ -28,7 +28,7 @@ export default function AIPoweredApplications() {
                     <div className={styles.serviceContent}>
                         <h2>Overview</h2>
                         <p>
-                            AI-powered applications go beyond traditional software. Nexyra builds custom web and mobile applications where AI is not an add-on—it's the foundation. From intelligent user interfaces to predictive analytics, our applications deliver experiences that adapt, learn, and optimize.
+                            AI-powered applications go beyond traditional software. Nexyrra builds custom web and mobile applications where AI is not an add-on—it's the foundation. From intelligent user interfaces to predictive analytics, our applications deliver experiences that adapt, learn, and optimize.
                         </p>
 
                         <h2>Capabilities</h2>

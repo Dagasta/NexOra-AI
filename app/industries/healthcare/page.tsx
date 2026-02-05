@@ -3,7 +3,7 @@ import Link from 'next/link'
 import styles from '../industry.module.css'
 
 export const metadata: Metadata = {
-    title: 'AI for Healthcare | Medical AI Solutions | Nexyra',
+    title: 'AI for Healthcare | Medical AI Solutions | Nexyrra',
     description: 'HIPAA-compliant AI solutions for healthcare: patient care optimization, clinical decision support, administrative automation, and medical imaging AI.',
     keywords: 'healthcare AI, medical AI, HIPAA compliance, clinical AI, patient care automation, medical imaging AI',
 }

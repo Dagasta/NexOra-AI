@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    const baseUrl = 'https://nexyra-ai.com'
+    const baseUrl = 'https://Nexyrra-ai.com'
     const lastModified = new Date()
 
     const routes = [

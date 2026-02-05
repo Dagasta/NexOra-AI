@@ -15,7 +15,7 @@ export default function Footer() {
                             position: 'relative',
                             display: 'inline-block'
                         }}>
-                            NEXYRA
+                            Nexyrra
                             <span style={{
                                 position: 'absolute',
                                 inset: '-8px',
@@ -71,7 +71,7 @@ export default function Footer() {
 
                 <div className={styles.footerBottom}>
                     <p className={styles.copyright}>
-                        © {new Date().getFullYear()} NEXYRA AI. All rights reserved.
+                        © {new Date().getFullYear()} Nexyrra AI. All rights reserved.
                     </p>
                     <div className={styles.footerBottomLinks}>
                         <Link href="/privacy">Privacy Policy</Link>
